@@ -1,0 +1,65 @@
+{
+	"name": "sling",
+	"displayName": "Sling Programming Language Support",
+	"description" : "Sling programming language support for Visual Studio Code",
+	"version": "1.0.1",
+	"publisher": "eqela",
+	"engines": {
+		"vscode": "*"
+	},
+	"keywords": [
+		"sling",
+		"theme"
+	],
+	"categories": [
+		"Languages",
+		"Themes",
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eqela/sling-vscode-extension.git"
+	},
+	"icon": "sling128.png",
+	"galleryBanner": {
+		"color": "#634428",
+		"theme": "dark"
+	},
+	"homepage" : "http://eqdn.tech/sling",
+	"contributes": {
+		"languages": [
+			{
+				"id": "sling",
+				"aliases": [
+					"SLING",
+					"sling"
+				],
+				"extensions": [
+					".sling",
+					".pling"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "sling",
+				"scopeName": "source.sling",
+				"path": "./sling.syntax.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Sling",
+				"uiTheme": "vs-dark",
+				"path": "./sling.tmTheme"
+			}
+		],
+		"snippets": [
+			{
+				"language": "sling",
+				"path": "./sling.snippets.json"
+			}
+		]
+	}
+}

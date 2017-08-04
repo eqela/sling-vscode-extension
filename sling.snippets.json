@@ -1,0 +1,91 @@
+{
+	"Function" : {
+		"prefix" : "func",
+		"body" : [
+			"func ${1:functionName} (${2:parameters...}) as ${3:type}",
+			"{",
+			"\t${4:...}",
+			"\treturn ${5:type}",
+			"}"
+		],
+		"description" : "Sling function"
+	},
+	"For Loop" : {
+		"prefix" : "for",
+		"body" : [
+			"for(${1:initializer}; ${2:condition}; ${3:iteration}) {",
+			"\t${4:action}",
+			"}"
+		],
+		"description" : "For loop statement"
+	},
+	"Loop" : {
+		"prefix" : "loop",
+		"body" : [
+			"loop {",
+			"\t${1:action}",
+			"}"
+		],
+		"description" : "Loop statement"
+	},
+	"Foreach" : {
+		"prefix" : "foreach",
+		"body" : [
+			"foreach ${1:item} in ${2:collection} {",
+			"\t${3:action}",
+			"}"
+		],
+		"description" : "Foreach statement"
+	},
+	"Switch" : {
+		"prefix" : "switch",
+		"body" : [
+			"switch ${1:expression} {",
+			"\tcase ${2:value1} : {",
+			"\t\t${3:action}",
+			"\t}",
+			"\tdefault: {",
+			"\t\t${3:action}",
+			"\t}",
+			"}"
+		],
+		"description" : "Switch statement"
+	},
+	"Critical" : {
+		"prefix" : "critical",
+		"body" : [
+			"critical ${1:object} {",
+			"\t${2:action}",
+			"}"
+		],
+		"description" : "Critical statement"
+	},
+	"UI Expression" : {
+		"prefix" : "ui",
+		"body" : [
+			"ui ${1:ParentWidget}",
+			"{",
+			"\t${2:...}",
+			"}"
+		],
+		"description" : "Sling UI expression"
+	},
+	"Lang block" : {
+		"prefix" : "lang",
+		"body" : [
+			"lang \"${1:target_language}\" {{{",
+			"\t${2:...}",
+			"}}}"
+		],
+		"description" : "Insert a block of code written im programming language"
+	},
+	"One-liner lang statement" : {
+		"prefix" : "lang",
+		"body" : [
+			"lang \"${1:target_language}\" ${2:return type} {{{ ${2:...} }}}"
+		],
+		"description" : "One liner lang statement"
+	}
+}
+
+
